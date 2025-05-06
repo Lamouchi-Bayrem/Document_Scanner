@@ -49,9 +49,9 @@ OCR-Text-Extractor/
 
 
 ## 🖼️ Screenshots
-![App Demo](uploads/Capture d'écran 2025-05-06 172303.png)
 
-![App Demo](https://raw.githubusercontent.com/your-username/your-repo-name/main/images/screenshot.png)
+
+![App Demo]([https://raw.githubusercontent.com/your-username/your-repo-name/main/images/screenshot.png](https://github.com/Lamouchi-Bayrem/Document_Scanner/blob/main/uploads/Capture%20d'%C3%A9cran%202025-05-06%20172303.png))
 
 
 ## 👨‍💻 Author
