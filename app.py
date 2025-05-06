@@ -8,7 +8,8 @@ import cv2
 import numpy as np
 import time
 import secrets
-
+import torch
+import gc
 
 # Initialize Flask app
 app = Flask(__name__, static_url_path='/static')
@@ -16,8 +17,11 @@ app.config.update(
     UPLOAD_FOLDER='static/uploads',
     MAX_CONTENT_LENGTH=16 * 1024 * 1024,  # 16MB limit
     ALLOWED_EXTENSIONS={'png', 'jpg', 'jpeg', 'bmp', 'gif', 'tiff', 'pdf'},
-    SECRET_KEY=secrets.token_hex(32)  # Proper secret key for production
+    SECRET_KEY=secrets.token_hex(32)
 )
+
+# Configure torch for low-memory environments
+torch.set_num_threads(1)
 
 # Initialize EasyOCR reader (lazy load when needed)
 reader = None
@@ -25,7 +29,12 @@ reader = None
 def get_reader():
     global reader
     if reader is None:
-        reader = easyocr.Reader(['en'])  # Initialize when first needed
+        reader = easyocr.Reader(
+            ['en'],
+            gpu=False,  # Explicitly disable GPU
+            model_storage_directory='./model',
+            download_enabled=True
+        )
     return reader
 
 # Configure logging
@@ -84,6 +93,11 @@ def index():
     """Render the home page"""
     return render_template('index.html')
 
+@app.route('/health')
+def health_check():
+    """Health check endpoint for Render"""
+    return 'OK', 200
+
 @app.route('/extract_text', methods=['POST'])
 def extract_text():
     """Handle file upload and text extraction"""
@@ -120,6 +134,9 @@ def extract_text():
             # Clean up processed image if it exists
             if processed_path and os.path.exists(processed_path):
                 os.remove(processed_path)
+            
+            # Clean up memory
+            gc.collect()
             
             if not extracted_text:
                 return jsonify({
@@ -159,4 +176,4 @@ def request_entity_too_large(error):
 
 if __name__ == '__main__':
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-    app.run(debug=True)
+    app.run(debug=False)  # Debug=False for production
