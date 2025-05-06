@@ -51,6 +51,7 @@ OCR-Text-Extractor/
 ## 🖼️ Screenshots
 ![App Demo](uploads/Capture d'écran 2025-05-06 172303.png)
 
+![App Demo](https://raw.githubusercontent.com/your-username/your-repo-name/main/images/screenshot.png)
 
 
 ## 👨‍💻 Author
