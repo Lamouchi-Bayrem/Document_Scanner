@@ -2,6 +2,8 @@ flask==2.3.2
 easyocr==1.6.2
 opencv-python-headless==4.7.0.72
 numpy==1.24.3
-torch==2.0.1
+torch==2.0.1+cpu  # CPU-only version
+torchvision==0.15.2+cpu  # CPU-only version
 gunicorn==20.1.0
 werkzeug==2.3.6
+--extra-index-url https://download.pytorch.org/whl/cpu
