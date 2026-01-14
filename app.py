@@ -9,7 +9,7 @@ import numpy as np
 import time
 import secrets
 import torch
-
+import gc
 
 # Initialize Flask app
 app = Flask(__name__, static_url_path='/static')
