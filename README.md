@@ -1,4 +1,4 @@
-# OCR Text Extractor 🔍🖼️
+# OCR Document Scanner 🔍🖼️
 
 A sleek, responsive web application that allows users to extract text from images and PDF files instantly using Optical Character Recognition (OCR). Built with Bootstrap, Animate.css, and a clean UI, this project offers fast, secure, and accurate OCR capabilities for a seamless user experience.
 
@@ -63,3 +63,4 @@ OCR-Text-Extractor/
 ## 📄 License
 
 This project is open-source and available under the MIT License.
+
