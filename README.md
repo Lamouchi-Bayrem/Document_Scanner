@@ -42,12 +42,19 @@ A sleek, responsive web application that allows users to extract text from image
 
 OCR-Text-Extractor/
 │
+
 ├── static/
+
 │ ├── style.css # Custom styles
+
 │ └── scripts.js # OCR upload logic, UI interactions
+
 │
+
 ├── index.html # Main HTML interface
+
 ├── README.md # You're reading it
+
 
 
 ## 🖼️ Screenshots
@@ -65,6 +72,7 @@ OCR-Text-Extractor/
 ## 📄 License
 
 This project is open-source and available under the MIT License.
+
 
 
 
