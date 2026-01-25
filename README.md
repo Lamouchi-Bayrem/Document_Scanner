@@ -45,18 +45,12 @@ https://github.com/user-attachments/assets/098b79d7-0ead-45a7-baf2-937ea3a88a8d
 
 OCR-Text-Extractor/
 │
-
 ├── static/
-
 │ ├── style.css # Custom styles
-
 │ └── scripts.js # OCR upload logic, UI interactions
-
 │
-
-├── index.html # Main HTML interface
-
-├── README.md # You're reading it
+├── index.html 
+├── README.md 
 
 
 
@@ -69,12 +63,12 @@ OCR-Text-Extractor/
 ## 👨‍💻 Author
 
 **Lamouchi Med Bayrem**  
-🔗 [GitHub](https://github.com/Lamouchi-Bayrem)  
 🔗 [LinkedIn](https://www.linkedin.com/in/lamouchi-med-bayrem/)
 
 ## 📄 License
 
 This project is open-source and available under the MIT License.
+
 
 
 
