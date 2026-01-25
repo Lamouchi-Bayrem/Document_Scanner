@@ -4,7 +4,7 @@ A sleek, responsive web application that allows users to extract text from image
 
 ## 🌐 Live Demo
 
-[![App Demo](uploads/demo_thumbnail.png)](https://github.com/Lamouchi-Bayrem/Document_Scanner/blob/main/uploads/0606.mp4)
+https://github.com/Lamouchi-Bayrem/Document_Scanner/blob/main/uploads/0606.mp4
 
 
 
@@ -65,6 +65,7 @@ OCR-Text-Extractor/
 ## 📄 License
 
 This project is open-source and available under the MIT License.
+
 
 
 
