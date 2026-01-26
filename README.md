@@ -29,8 +29,8 @@ https://github.com/user-attachments/assets/098b79d7-0ead-45a7-baf2-937ea3a88a8d
   - [Animate.css](https://animate.style/)
   - [Google Fonts (Poppins)](https://fonts.google.com/specimen/Poppins)
 
-- **Backend (Not included here)**:
-  - Can be integrated with Flask, FastAPI, Node.js, etc.
+- **Backend (JavaScript)**:
+  - Integrated  Node.js,
   - OCR with [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) or [EasyOCR](https://github.com/JaidedAI/EasyOCR)
 
 ## 🚀 How It Works
